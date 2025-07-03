@@ -156,7 +156,7 @@ ORDER BY month;
 
 ### 8. High Purchase Frequency
 
-**Problem**: Describe high-frequency, high-spend customers.
+**Problem**: Describes the number of transaction along with the total amount spent by each customer. Having number of transactions more than 10 and TotalSpent more than 1000.
 
 ```sql
 SELECT 
@@ -175,7 +175,7 @@ ORDER BY TotalSpent DESC;
 
 ### 9. Occasional Customers
 
-**Problem**: Identify customers with 1–2 transactions.
+**Problem**: Identify the occasional customers who exhibit low purchase frequency within the company.
 
 ```sql
 SELECT 
@@ -194,7 +194,7 @@ ORDER BY NumberOfTransactions ASC, TotalSpent DESC;
 
 ### 10. Repeat Purchases
 
-**Problem**: Identify repeated product purchases by customers.
+**Problem**: Describes the total number of purchases made by each customer against each productID to understand the repeat customers in the company.
 
 ```sql
 SELECT 
@@ -214,7 +214,7 @@ ORDER BY TimesPurchased DESC;
 
 ### 11. Loyalty Indicators
 
-**Problem**: Calculate duration between first and last purchase.
+**Problem**: Calculate duration between first and last purchase  in that particular company to understand the loyalty of the customer.
 
 ```sql
 SELECT 
@@ -235,7 +235,11 @@ ORDER BY DaysBetweenPurchases DESC;
 
 ### 12. Customer Segmentation
 
-**Problem**: Segment customers based on quantity purchased.
+**Problem**: Segment customers based on quantity purchased. Customer segments on the following criteria-
+Total quantity of the purchased products vs Customer_segment 
+                                 1-10                      LOW
+                                 11-30                    MID 
+                                 >30                      HIGH
 
 ```sql
 SELECT
