@@ -30,7 +30,6 @@ LIMIT 10;
 ```
 
 **Insight**: Products with the highest revenue are Product IDs 17, 87, and 179.  
-**Interpretation**: Focus on stock optimization, marketing, and bundling strategies around these products.
 
 ---
 
@@ -68,8 +67,7 @@ GROUP BY p.Category
 ORDER BY TotalSales DESC;
 ```
 
-**Insight**: 'Home & Kitchen' and 'Electronics' are top-performing categories.  
-**Interpretation**: Prioritize these in promotions and inventory planning.
+**Insight**: 'Home & Kitchen' is top-performing category.  
 
 ---
 
@@ -88,7 +86,6 @@ LIMIT 10;
 ```
 
 **Insight**: Top revenue contributors mirror those in Q1.  
-**Interpretation**: Continue promoting these revenue-driving products.
 
 ---
 
@@ -107,7 +104,6 @@ LIMIT 10;
 ```
 
 **Insight**: Products like 142, 33, and 174 had the lowest sales.  
-**Interpretation**: Review for possible discontinuation or repositioning.
 
 ---
 
@@ -128,7 +124,6 @@ LIMIT 10;
 ```
 
 **Insight**: Revenue is stable across high-transaction days.  
-**Interpretation**: Useful for inventory planning and forecasting.
 
 ---
 
@@ -155,7 +150,6 @@ ORDER BY month;
 ```
 
 **Insight**: Monthly growth fluctuates significantly.  
-**Interpretation**: Indicates the need for stable seasonal promotions.
 
 ---
 
@@ -175,7 +169,6 @@ ORDER BY TotalSpent DESC;
 ```
 
 **Insight**: 10+ loyal customers spent over ₹1000 each.  
-**Interpretation**: Prime candidates for retention and rewards programs.
 
 ---
 
@@ -195,7 +188,6 @@ ORDER BY NumberOfTransactions ASC, TotalSpent DESC;
 ```
 
 **Insight**: Many are one-time buyers.  
-**Interpretation**: Consider re-engagement campaigns or surveys.
 
 ---
 
@@ -264,7 +256,6 @@ GROUP BY CustomerSegment;
 ```
 
 **Insight**: Majority are in 'Med' segment, followed by 'Low'.  
-**Interpretation**: Focus upselling on 'Med' group and convert 'Low' to 'Med'.
 
 ---
 
@@ -280,18 +271,12 @@ GROUP BY CustomerSegment;
 
 ## 🛠 Tech Stack
 
-- SQL (PostgreSQL / MySQL)
-- Retail Dataset (hypothetical)
-
----
-
-## 🧾 License
-
-This project is open-source and available under the MIT License.
+- MySQL
+- Retail Dataset
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Akash Chowdhary**  
-[LinkedIn](#) | [GitHub](#) | Portfolio (Add your links)
+[LinkedIn](www.linkedin.com/in/achowdhary) | [GitHub](https://github.com/Akash-22-05/Retail-Analytics-SQL-Case-Study) 
