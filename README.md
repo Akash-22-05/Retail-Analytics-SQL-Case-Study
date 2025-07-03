@@ -244,18 +244,12 @@ GROUP BY CustomerSegment;
 
 ## 🛠 Tech Stack
 
-- SQL (PostgreSQL / MySQL)
-- Retail Dataset (hypothetical)
-
----
-
-## 🧾 License
-
-This project is open-source and available under the MIT License.
+- SQL (MySQL)
+- Retail Dataset
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Akash Chowdhary**  
-[LinkedIn](#) | [GitHub](#) | Portfolio (Add your links)
+[LinkedIn](www.linkedin.com/in/achowdhary) | [GitHub](#) 
