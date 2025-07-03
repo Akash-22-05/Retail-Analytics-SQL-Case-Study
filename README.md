@@ -8,9 +8,9 @@ This project showcases a collection of SQL queries designed to analyze and deriv
 
 ---
 
-## 📊 Case Study Overview
+# 📊 Case Study with Insights
 
-The SQL scripts cover the following business questions with their respective queries:
+Each question below includes the business problem, the SQL query, and the corresponding insights derived from the results.
 
 ---
 
@@ -29,6 +29,9 @@ ORDER BY TotalSales DESC
 LIMIT 10;
 ```
 
+**Insight**: Products with the highest revenue are Product IDs 17, 87, and 179.  
+**Interpretation**: Focus on stock optimization, marketing, and bundling strategies around these products.
+
 ---
 
 ### 2. Customer Purchase Frequency
@@ -44,6 +47,9 @@ GROUP BY CustomerID
 ORDER BY NumberOfTransactions DESC 
 LIMIT 10;
 ```
+
+**Insight**: Customers such as 664, 670, and 958 made 12–14 purchases.  
+**Interpretation**: These high-frequency buyers are potentially loyal customers.
 
 ---
 
@@ -62,6 +68,9 @@ GROUP BY p.Category
 ORDER BY TotalSales DESC;
 ```
 
+**Insight**: 'Home & Kitchen' and 'Electronics' are top-performing categories.  
+**Interpretation**: Prioritize these in promotions and inventory planning.
+
 ---
 
 ### 4. High Sales Products
@@ -77,6 +86,9 @@ GROUP BY ProductID
 ORDER BY TotalRevenue DESC
 LIMIT 10;
 ```
+
+**Insight**: Top revenue contributors mirror those in Q1.  
+**Interpretation**: Continue promoting these revenue-driving products.
 
 ---
 
@@ -94,11 +106,14 @@ ORDER BY TotalUnitsSold ASC
 LIMIT 10;
 ```
 
+**Insight**: Products like 142, 33, and 174 had the lowest sales.  
+**Interpretation**: Review for possible discontinuation or repositioning.
+
 ---
 
 ### 6. Sales Trend
 
-**Problem**: Identify the sales trend based on daily data (transactions, units sold, and sales).
+**Problem**: Identify the sales trend based on daily data.
 
 ```sql
 SELECT 
@@ -112,11 +127,14 @@ ORDER BY DateTrans DESC
 LIMIT 10;
 ```
 
+**Insight**: Revenue is stable across high-transaction days.  
+**Interpretation**: Useful for inventory planning and forecasting.
+
 ---
 
 ### 7. Growth Rate of Sales
 
-**Problem**: Calculate month-on-month growth rate of sales to understand trends.
+**Problem**: Calculate month-on-month growth rate of sales.
 
 ```sql
 WITH Monthly_sales AS (
@@ -136,11 +154,14 @@ FROM Monthly_sales
 ORDER BY month;
 ```
 
+**Insight**: Monthly growth fluctuates significantly.  
+**Interpretation**: Indicates the need for stable seasonal promotions.
+
 ---
 
-### 8. High Purchase Frequency Customers
+### 8. High Purchase Frequency
 
-**Problem**: Describe customers with high transaction count and total spending.
+**Problem**: Describe high-frequency, high-spend customers.
 
 ```sql
 SELECT 
@@ -153,11 +174,14 @@ HAVING COUNT(TransactionID) > 10 AND SUM(QuantityPurchased * Price) > 1000
 ORDER BY TotalSpent DESC;
 ```
 
+**Insight**: 10+ loyal customers spent over ₹1000 each.  
+**Interpretation**: Prime candidates for retention and rewards programs.
+
 ---
 
 ### 9. Occasional Customers
 
-**Problem**: Identify customers with very few purchases (1-2 transactions).
+**Problem**: Identify customers with 1–2 transactions.
 
 ```sql
 SELECT 
@@ -170,11 +194,14 @@ HAVING COUNT(TransactionID) <= 2
 ORDER BY NumberOfTransactions ASC, TotalSpent DESC;
 ```
 
+**Insight**: Many are one-time buyers.  
+**Interpretation**: Consider re-engagement campaigns or surveys.
+
 ---
 
 ### 10. Repeat Purchases
 
-**Problem**: Identify customers who bought the same product more than once.
+**Problem**: Identify repeated product purchases by customers.
 
 ```sql
 SELECT 
@@ -187,11 +214,14 @@ HAVING COUNT(QuantityPurchased) > 1
 ORDER BY TimesPurchased DESC;
 ```
 
+**Insight**: Repeat buys show brand/product loyalty.  
+**Interpretation**: Recommend similar products or bundles.
+
 ---
 
 ### 11. Loyalty Indicators
 
-**Problem**: Calculate days between the first and last purchase for each customer.
+**Problem**: Calculate duration between first and last purchase.
 
 ```sql
 SELECT 
@@ -205,11 +235,14 @@ HAVING DaysBetweenPurchases > 0
 ORDER BY DaysBetweenPurchases DESC;
 ```
 
+**Insight**: Some customers have over 30 years of purchase history.  
+**Interpretation**: These are highly loyal customers – treat them as VIPs.
+
 ---
 
 ### 12. Customer Segmentation
 
-**Problem**: Segment customers based on quantity purchased and count them by segment.
+**Problem**: Segment customers based on quantity purchased.
 
 ```sql
 SELECT
@@ -230,6 +263,9 @@ FROM (
 GROUP BY CustomerSegment;
 ```
 
+**Insight**: Majority are in 'Med' segment, followed by 'Low'.  
+**Interpretation**: Focus upselling on 'Med' group and convert 'Low' to 'Med'.
+
 ---
 
 ## 🧠 Skills Demonstrated
@@ -244,12 +280,18 @@ GROUP BY CustomerSegment;
 
 ## 🛠 Tech Stack
 
-- SQL (MySQL)
-- Retail Dataset
+- SQL (PostgreSQL / MySQL)
+- Retail Dataset (hypothetical)
+
+---
+
+## 🧾 License
+
+This project is open-source and available under the MIT License.
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Akash Chowdhary**  
-[LinkedIn](www.linkedin.com/in/achowdhary) | [GitHub](https://github.com/Akash-22-05/Retail-Analytics-SQL-Case-Study) 
+[LinkedIn](#) | [GitHub](#) | Portfolio (Add your links)
