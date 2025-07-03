@@ -98,7 +98,8 @@ SELECT
     ProductID, 
     SUM(QuantityPurchased) AS TotalUnitsSold 
 FROM Sales_transaction 
-GROUP BY ProductID 
+GROUP BY ProductID
+HAVING SUM(QuantityPurchased) > 0
 ORDER BY TotalUnitsSold ASC 
 LIMIT 10;
 ```
