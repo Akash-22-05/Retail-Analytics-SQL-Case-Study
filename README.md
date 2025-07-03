@@ -235,11 +235,11 @@ ORDER BY DaysBetweenPurchases DESC;
 
 ### 12. Customer Segmentation
 
-**Problem**: Segment customers based on quantity purchased. Customer segments on the following criteria-
-Total quantity of the purchased products vs Customer_segment 
-                                 1-10                      LOW
-                                 11-30                    MID 
-                                 >30                      HIGH
+**Problem**: Segment customers based on quantity purchased. Customer segments on the following criteria :- 
+Total purchased quantity betweeen 1-10 then Customer_segment = "LOW" , 
+Total purchased quantity betweeen 11-30 then Customer_segment = "MID" , 
+Total purchased quantity >30 then Customer_segment = "HIGH" 
+
 
 ```sql
 SELECT
