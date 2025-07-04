@@ -284,4 +284,6 @@ GROUP BY CustomerSegment;
 ## 🙋‍♂️ Author
 
 **Akash Chowdhary**  
-[LinkedIn](www.linkedin.com/in/achowdhary) | [GitHub](https://github.com/Akash-22-05/Retail-Analytics-SQL-Case-Study) 
+[LinkedIn](https://www.linkedin.com/in/achowdhary/) | [GitHub](https://github.com/Akash-22-05/Retail-Analytics-SQL-Case-Study) 
+
+
